@@ -30,4 +30,7 @@ export const defaultTheme = {
     regular: "'Poppins'",
     title: "'Open Sans'",
   },
+  imgbanner: {
+    banner: './assets/baneer.svg',
+  },
 }
