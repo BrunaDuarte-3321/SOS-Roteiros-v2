@@ -5,20 +5,28 @@ import bannerBackground from '../../assets/baneer.svg'
   size: 'l' | 'm' | 's'
 } */
 export const BannerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40rem;
-  background: url(${bannerBackground});
+  background: url(${bannerBackground}) no-repeat;
   background-size: cover;
 `
 
 export const BannerTitleContainer = styled.div`
-  width: 62rem;
+  width: 60rem;
   height: 13.5rem;
-  border: solid 1px red;
-
-  /* font-family: ${({ theme }) => theme.fonts.regular};
-  font-size: 90px;
-  line-height: 104px; */
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 6rem;
+    font-family: ${({ theme }) => theme.fonts.regular};
+    font-weight: 600;
+    line-height: 6.5rem;
+    color: ${({ theme }) => theme.color.white};
+  }
 `
